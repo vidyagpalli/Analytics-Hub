@@ -70,7 +70,7 @@ Focused on data mapping, cleansing, migration validation, integrity checks, and 
 - Apache Spark
 
 ## Sample Analytics
-```
+```python
 
 df = pd.read_sql(query, connection)
 
