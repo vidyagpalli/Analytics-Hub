@@ -69,6 +69,17 @@ Focused on data mapping, cleansing, migration validation, integrity checks, and 
 - Excel
 - Apache Spark
 
+## Sample Analytics
+```
+
+df = pd.read_sql(query, connection)
+
+df = df.drop_duplicates()
+
+df["Sales"] = df["Sales"].fillna(0)
+
+region_sales = df.groupby("Region")["Sales"].sum()
+```
 ## Sample Deliverables
 
 - Interactive KPI dashboards
