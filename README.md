@@ -23,6 +23,20 @@ Focused on data analysis, KPI tracking, dashboard automation, and business insig
 Focused on data mapping, cleansing, migration validation, integrity checks, and cross-system consistency during enterprise system transitions.
 
 ---
+## Data Flow
+```
+SQL Database
+      ↓
+SQL Query
+      ↓
+pd.read_sql()
+      ↓
+Python DataFrame
+      ↓
+Pandas Transformation
+      ↓
+Power BI / Tableau Dashboard
+```
 
 ## Tools & Technologies
 
