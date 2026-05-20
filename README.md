@@ -70,6 +70,10 @@ Focused on data mapping, cleansing, migration validation, integrity checks, and 
 - Apache Spark
 
 ## Sample Analytics
+* Extracted SQL data
+* Removed duplicates
+* Handled missing values
+* Aggregated sales by region
 ```python
 
 df = pd.read_sql(query, connection)
