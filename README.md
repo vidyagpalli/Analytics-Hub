@@ -162,3 +162,18 @@ Load into New CMS
       ↓
 Validation & Integrity Checks
 ```
+
+### A/B Testing
+```sql
+SELECT COUNT(*) FROM old_users;
+SELECT COUNT(*) FROM new_users;
+
+SELECT email, COUNT(*)
+FROM users
+GROUP BY email
+HAVING COUNT(*) > 1;
+
+SELECT *
+FROM users
+WHERE email IS NULL;
+```
