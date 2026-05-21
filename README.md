@@ -104,3 +104,21 @@ region_sales = df.groupby("Region")["Sales"].sum()
 - Automated reporting workflows
 - Business performance analysis
 - Trend and usage analysis
+
+# Data Migration workflow 
+
+```
+Legacy Database
+      ↓
+Data Extraction
+      ↓
+Data Mapping
+      ↓
+Data Cleansing
+      ↓
+Data Transformation
+      ↓
+Load into New CMS
+      ↓
+Validation & Integrity Checks
+```
