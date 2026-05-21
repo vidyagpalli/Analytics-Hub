@@ -105,19 +105,59 @@ region_sales = df.groupby("Region")["Sales"].sum()
 - Business performance analysis
 - Trend and usage analysis
 
-# Data migration workflow 
+## Migration Workflow
 
+The project followed a structured ETL-based data migration workflow to move data from a legacy PHP/MySQL application into a modern CMS platform integrated with ASP.NET/.NET technologies.
+
+### Workflow Steps
+
+1. Data Extraction
+   - Extracted structured data from legacy MySQL databases
+   - Used SQL queries and PL/SQL views for data retrieval
+
+2. Data Mapping
+   - Mapped source database fields to target CMS schema
+   - Defined transformation and compatibility rules
+
+3. Data Cleansing
+   - Removed duplicate and inconsistent records
+   - Standardized metadata and formatting
+   - Validated mandatory fields and null values
+
+4. Data Transformation
+   - Converted data into target CMS-compatible formats
+   - Applied business rules and formatting logic
+
+5. Data Loading
+   - Loaded transformed datasets into the new CMS environment
+   - Executed migration scripts and batch inserts
+
+6. Validation & Integrity Checks
+   - Compared source vs target record counts
+   - Verified data completeness and accuracy
+   - Checked for duplicates, missing values, and schema consistency
+
+7. Post-Migration Verification
+   - Collaborated with technical teams for testing and verification
+   - Ensured successful migration and consistent system behavior
+
+### Migration Flow
 ```
-Legacy Database
-      ↓
+Legacy PHP/MySQL System
+        ↓
 Data Extraction
-      ↓
+        ↓
 Data Mapping
-      ↓
+        ↓
 Data Cleansing
-      ↓
+        ↓
 Data Transformation
-      ↓
+        ↓
+Load into New CMS
+        ↓
+Validation & Integrity Checks
+        ↓
+Post-Migration Verification
 Load into New CMS
       ↓
 Validation & Integrity Checks
