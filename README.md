@@ -105,7 +105,7 @@ region_sales = df.groupby("Region")["Sales"].sum()
 - Business performance analysis
 - Trend and usage analysis
 
-# Data Migration workflow 
+# Data migration workflow 
 
 ```
 Legacy Database
